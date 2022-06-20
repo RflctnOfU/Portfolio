@@ -1,0 +1,84 @@
+:root {
+    --bg-color: rgb(170, 170, 170);
+    --text-color: rgb(20, 57, 85);
+    --highlight-color: rgb(78, 160, 228);
+}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 175vh;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+    /* grid-template-columns: 2fr 3fr 3fr; */
+    grid-template-rows: 2fr 6fr 1fr;
+    gap: 10px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'about about'
+    'work work';
+    grid-template-rows: 2fr 1fr;
+}
+
+header { 
+    background-color: var(--text-color);
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    grid-area: header;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 525;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: end;
+    align-content: flex-start;
+    padding-right: 10px;
+}
+
+#name {
+    display: flexbox;
+    background-color: var(--highlight-color);
+    width: 275px;
+    height: 3rem;
+}
+
+#bg-image {
+    background-image: url('../images/pexels-nick-collins-1292998.jpg');
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-size: 100% 100%;
+}
+
+#about {
+    display: inline;
+}
+
+.side {
+    /* border: solid 1px var(--highlight-color); */
+    border-right: solid 5px var(--text-color);
+    /* background-color: var(--text-color) */
+}
