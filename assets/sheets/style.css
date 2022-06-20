@@ -201,7 +201,6 @@ main {
 .project {
     grid-area: project;
     /* border: solid 1px var(--highlight-color); */
-    background-color: rgba(0, 0, 0, 0);
     border: solid 3px var(--highlight-color);
     background-image: url(/assets/images/01-app-desktop.png);
     background-size: cover;
