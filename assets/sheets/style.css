@@ -29,24 +29,46 @@ footer {
 }
 
 header { 
+    grid-area: header;
     background-color: var(--text-color);
     padding-bottom: 50px;
     margin-bottom: 10px;
 }
 
 #name {
-    display: flexbox;
+    /* display: flexbox; */
     /* align-content: center; */
     background-color: var(--highlight-color);
+    margin-top: 10px;
     width: 275px;
-    height: 3rem;
+    height: 2.2rem;
+    border-radius: 0 7px 7px 0;
+}
+
+#name,
+#nav {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color .5s ease-in;
+}
+
+li:hover {
+
 }
 
 #bg-image {
     background-image: url('../images/pexels-nick-collins-1292998.jpg');
     width: 100%;
     height: 100%;
-    padding-top: 10px;
+    margin: 10px 0;
     background-size: 100% 100%;
 }
 
@@ -75,15 +97,14 @@ h3 {
     padding-right: 10px;
 }
 
-header {
-    grid-area: header;
-    /* display: grid;
+/* header {
+    display: grid;
     grid-template-areas:
     'name name'
     'image image';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr; */
-    }
+    grid-template-rows: 1fr 2fr; 
+    } */
 
     /* header > * {
         border: solid 1px var(--highlight-color);
