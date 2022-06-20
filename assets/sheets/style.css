@@ -93,10 +93,6 @@ a:hover {
     color: white;
 }
 
-li:hover {
-
-}
-
 #bg-image {
     background-image: url('../images/pexels-nick-collins-1292998.jpg');
     width: 100%;
@@ -189,6 +185,7 @@ main {
     /* border: solid 1px var(--highlight-color); */
     background-color: var(--text-color);
     border: solid 3px var(--highlight-color);
+    
 }
 
 .coming-soon {
