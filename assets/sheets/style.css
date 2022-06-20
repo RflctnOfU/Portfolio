@@ -7,6 +7,12 @@
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,10 +22,11 @@ body {
     display: grid;
     grid-template-areas:
     'header header header'
+    'image image image'
     'aside main main'
     'aside footer footer';
     grid-template-columns: 2fr 3fr 3fr;
-    grid-template-rows: 2fr 6fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 6fr 1fr;
     gap: 10px;
 }
 
@@ -31,8 +38,17 @@ footer {
 header { 
     grid-area: header;
     background-color: var(--text-color);
-    padding-bottom: 50px;
+    padding: 20px 5%;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#image {
+    grid-area: image;
+    column-span: 1 / 4;
 }
 
 #name {
@@ -42,7 +58,7 @@ header {
     margin-top: 10px;
     width: 275px;
     height: 2.2rem;
-    border-radius: 0 7px 7px 0;
+    border-radius: 7px;
 }
 
 #name,
@@ -54,10 +70,25 @@ ul {
     list-style: none;
 }
 
-li {
-    color: var(--text-color);
+li, a {
+    color: var(--highlight-color);
     text-decoration: none;
-    transition: color .5s ease-in;
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+a, .project, .coming-soon {
+    cursor: pointer;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: white;
 }
 
 li:hover {
@@ -68,7 +99,7 @@ li:hover {
     background-image: url('../images/pexels-nick-collins-1292998.jpg');
     width: 100%;
     height: 100%;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     background-size: 100% 100%;
 }
 
