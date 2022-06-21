@@ -281,6 +281,15 @@ main {
 
 footer {
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li a {
+    color: var(--text-color);
+    display: inline-block;
+    padding: 0 25px;
 }
 
 footer, .contact {
@@ -312,5 +321,11 @@ footer, .contact {
 
     aside {
         display: none;
+    }
+
+    #name,
+    #nav,
+    #avatar {
+        display: block;
     }
 }
