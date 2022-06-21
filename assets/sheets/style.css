@@ -225,6 +225,40 @@ main {
     /* z-index: -1; */
 }
 
+.project {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0;
+}
+.project .label {
+    height: 2.7rem;
+    width: 100px;
+    background-color: var(--highlight-color);
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    border-radius: 0 7px 7px 0;
+}
+
+#one {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#one .label {
+    height: 1.5rem;
+    width: 130px;
+    background-color: var(--highlight-color);
+    border-radius: 0 7px 7px 0;
+
+}
+.label h4 {
+    color: var(--text-color);
+}
+
 .coming-soon {
     grid-area: coming-soon;
     display: grid;
@@ -283,4 +317,32 @@ footer {
 
 footer, .contact {
     margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+    body {
+        grid-template-areas:
+        'header header'
+        'image image'
+        'main main'
+        'footer footer';
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .coming-soon {
+        grid-template-areas:
+        'one one'
+        'two two'
+        'three three'
+        'four four';
+        grid-template-columns: auto;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
 }
