@@ -41,7 +41,6 @@ header {
     grid-area: header;
     background-color: var(--text-color);
     padding: 20px 5%;
-    /* margin-bottom: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,9 +52,6 @@ header {
     width: 100px;
     border: solid 1px var(--highlight-color);
     border-radius: 50%;
-    /* background-image: url(../images/IMG_0137.JPG); */
-    /* background-size: contain; */
-    /* position: center; */
 }
 
 #image {
@@ -66,8 +62,6 @@ header {
 
 
 #name {
-    /* display: flexbox; */
-    /* align-content: center; */
     background-image: 
     linear-gradient(rgba(78, 160, 228, 0.5) 50%, rgba(78, 160, 228, 1) 100%);
     margin-top: 10px;
@@ -81,10 +75,6 @@ header {
 #avatar {
     display: inline-block;
 }
-
-/* .project img {
-    opacity: 0.5;
-} */
 
 #subtitle {
     background-color: var(--text-color);
@@ -125,7 +115,6 @@ a:hover {
     background-image: url('../images/pexels-nick-collins-1292998.jpg');
     width: 100%;
     height: 100%;
-    /* margin: 10px 0; */
     background-size: 100% 100%;
     display: flex;
     justify-content: flex-end;
@@ -153,25 +142,11 @@ h2 {
 h3 {
     font-size: 1.75rem;
     font-weight: 525;
-    /* font-family: 'Ubuntu', serif; */
     display: flex;
     justify-content: end;
     align-content: flex-start;
     padding-right: 10px;
 }
-
-/* header {
-    display: grid;
-    grid-template-areas:
-    'name name'
-    'image image';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr; 
-    } */
-
-    /* header > * {
-        border: solid 1px var(--highlight-color);
-    } */
 
 aside {
     grid-area: aside;
@@ -185,9 +160,7 @@ aside {
 }
 
 aside > * {
-    /* border: solid 1px var(--highlight-color); */
     border-right: solid 5px var(--text-color);
-    /* background-color: var(--text-color) */
 }
 
 main {
@@ -216,13 +189,11 @@ main {
 
 .project {
     grid-area: project;
-    /* border: solid 1px var(--highlight-color); */
     border: solid 3px var(--highlight-color);
     background-image: url(/assets/images/01-app-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* z-index: -1; */
 }
 
 .project {
@@ -271,7 +242,6 @@ main {
 }
 
 .coming-soon > * {
-    /* border: solid 1px var(--highlight-color); */
     background-color: var(--text-color);
 }
 
@@ -311,8 +281,6 @@ main {
 
 footer {
     grid-area: footer;
-    /* border: solid 1px var(--highlight-color); */
-    /* background-color: var(--text-color); */
 }
 
 footer, .contact {
