@@ -244,6 +244,20 @@ main {
 #one {
     grid-area: one;
     border: solid 3px var(--highlight-color);
+    background-image: url(/assets/images/pexels-pixabay-276452.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#two,
+#three,
+#four {
+    background-image: url(/assets/images/coming-ge3c635086_640.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #two {
