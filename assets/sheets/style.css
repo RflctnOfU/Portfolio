@@ -48,6 +48,16 @@ header {
     
 }
 
+#avatar img {
+    height: 100px;
+    width: 100px;
+    border: solid 1px var(--highlight-color);
+    border-radius: 50%;
+    /* background-image: url(../images/IMG_0137.JPG); */
+    /* background-size: contain; */
+    /* position: center; */
+}
+
 #image {
     grid-area: image;
     column-span: 1 / 4;
@@ -58,7 +68,8 @@ header {
 #name {
     /* display: flexbox; */
     /* align-content: center; */
-    background-color: var(--highlight-color);
+    background-image: 
+    linear-gradient(rgba(78, 160, 228, 0.5) 50%, rgba(78, 160, 228, 1) 100%);
     margin-top: 10px;
     width: 275px;
     height: 2.2rem;
@@ -66,7 +77,8 @@ header {
 }
 
 #name,
-#nav {
+#nav,
+#avatar {
     display: inline-block;
 }
 
@@ -116,7 +128,11 @@ a:hover {
     /* margin: 10px 0; */
     background-size: 100% 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+}
+
+#bg-image h2 {
+    align-items: center;
 }
 
 #about {
@@ -206,7 +222,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 0;
+    /* z-index: -1; */
 }
 
 .coming-soon {
