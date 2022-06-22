@@ -80,6 +80,7 @@ header {
     display: inline-block;
 }
 
+/* link styling */
 a {
     transition: all 0.3s ease 0s;
 }
@@ -294,6 +295,8 @@ footer, .contact {
     margin-bottom: 10px;
 }
 
+/* responsive design */
+
 @media screen and (max-width: 992px) {
     body {
         grid-template-areas:
@@ -313,10 +316,7 @@ footer, .contact {
         text-align: center;
     }
 
-    #name {
-        width:
-    }
-
+    /* removes aside for responsiveness */
     aside {
         display: none;
     }
