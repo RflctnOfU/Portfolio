@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+/* Color Scheme */
+
 :root {
     --bg-color: rgb(170, 170, 170);
     --text-color: rgb(20, 57, 85);
@@ -32,102 +34,6 @@ body {
     gap: 10px;
 }
 
-main,
-footer {
-    margin: 0 50px 0 35px;
-}
-
-header { 
-    grid-area: header;
-    background-color: var(--text-color);
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-#avatar img {
-    height: 100px;
-    width: 100px;
-    border: solid 1px var(--highlight-color);
-    border-radius: 50%;
-}
-
-#image {
-    grid-area: image;
-    column-span: 1 / 4;
-}
-
-
-
-#name {
-    background-image: 
-    linear-gradient(rgba(78, 160, 228, 0.5) 50%, rgba(78, 160, 228, 1) 100%);
-    margin-top: 10px;
-    width: 275px;
-    height: 2.2rem;
-    border-radius: 7px;
-}
-
-#name,
-#nav,
-#avatar {
-    display: inline-block;
-}
-
-#subtitle {
-    background-color: var(--text-color);
-    color: var(--highlight-color);
-    margin: 17px 10px 10px 0;
-    width: 100px;
-    height: 1.6rem;
-    border-radius: 7px;
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-}
-
-li, a {
-    color: var(--highlight-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-a, .project, .coming-soon {
-    cursor: pointer;
-}
-
-a {
-    transition: all 0.3s ease 0s;
-}
-
-a:hover {
-    color: white;
-}
-
-#bg-image {
-    background-image: url('../images/pexels-nick-collins-1292998.jpg');
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#bg-image h2 {
-    align-items: center;
-}
-
-#about {
-    padding-top: 20px;
-}
-
 h1 {
     font-size: 2rem;
     font-weight: 800;
@@ -146,6 +52,103 @@ h3 {
     justify-content: end;
     align-content: flex-start;
     padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+header { 
+    grid-area: header;
+    background-color: var(--text-color);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#name {
+    background-image: 
+    linear-gradient(rgba(78, 160, 228, 0.5) 50%, rgba(78, 160, 228, 1) 100%);
+    margin-top: 10px;
+    width: 275px;
+    height: 2.2rem;
+    border-radius: 7px;
+}
+
+#name,
+#nav,
+#avatar {
+    display: inline-block;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li, a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#avatar img {
+    height: 100px;
+    width: 100px;
+    border: solid 1px var(--highlight-color);
+    border-radius: 50%;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'about'
+    'section';
+    grid-template-rows: 1fr 3fr;
+    gap: 10px;
+}
+
+main,
+footer {
+    margin: 0 50px 0 35px;
+}
+
+#image {
+    grid-area: image;
+    column-span: 1 / 4;
+}
+
+#bg-image {
+    background-image: url('../images/pexels-nick-collins-1292998.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bg-image h2 {
+    align-items: center;
+}
+
+#subtitle {
+    background-color: var(--text-color);
+    color: var(--highlight-color);
+    margin: 10px 10px 10px 0;
+    width: 100px;
+    height: 1.6rem;
+    border-radius: 7px;
+    text-align: center;
 }
 
 aside {
@@ -163,14 +166,8 @@ aside > * {
     border-right: solid 5px var(--text-color);
 }
 
-main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas:
-    'about'
-    'section';
-    grid-template-rows: 1fr 3fr;
-    gap: 10px;
+#about {
+    padding-top: 20px;
 }
 
 #about {
@@ -212,6 +209,14 @@ main {
     border-radius: 0 7px 7px 0;
 }
 
+.label h4 {
+    color: var(--text-color);
+}
+
+a, .project, .coming-soon {
+    cursor: pointer;
+}
+
 #one {
     display: flex;
     align-items: flex-end;
@@ -226,9 +231,6 @@ main {
     border-radius: 0 7px 7px 0;
 
 }
-.label h4 {
-    color: var(--text-color);
-}
 
 .coming-soon {
     grid-area: coming-soon;
@@ -239,10 +241,6 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-}
-
-.coming-soon > * {
-    background-color: var(--text-color);
 }
 
 #one {
@@ -296,7 +294,7 @@ footer, .contact {
     margin-bottom: 10px;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     body {
         grid-template-areas:
         'header header'
@@ -306,17 +304,17 @@ footer, .contact {
         grid-template-columns: 1fr 1fr;
     }
 
-    .coming-soon {
-        grid-template-areas:
-        'one one'
-        'two two'
-        'three three'
-        'four four';
-        grid-template-columns: auto;
-    }
-
     header {
         flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #name {
+        width:
     }
 
     aside {
@@ -327,5 +325,32 @@ footer, .contact {
     #nav,
     #avatar {
         display: block;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        grid-template-rows: 1fr 6fr;
+    }
+
+    #work {
+        grid-template-rows: 2fr 3fr;
+    }
+
+    .coming-soon {
+        grid-template-areas:
+        'one one'
+        'two two'
+        'three three'
+        'four four';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    footer ul li a {
+        padding: 0;
+        font-size: 1rem;
     }
 }
