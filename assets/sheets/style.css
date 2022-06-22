@@ -188,7 +188,7 @@ aside > * {
 .project {
     grid-area: project;
     border: solid 3px var(--highlight-color);
-    background-image: url(/assets/images/01-app-desktop.png);
+    background-image: url(../images/01-app-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -247,7 +247,7 @@ a, .project, .coming-soon {
 #one {
     grid-area: one;
     border: solid 3px var(--highlight-color);
-    background-image: url(/assets/images/pexels-pixabay-276452.jpg);
+    background-image: url(../images/pexels-pixabay-276452.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -257,7 +257,7 @@ a, .project, .coming-soon {
 #two,
 #three,
 #four {
-    background-image: url(/assets/images/coming-ge3c635086_640.jpg);
+    background-image: url(../images/coming-ge3c635086_640.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
