@@ -25,10 +25,10 @@ body {
     height: 175vh;
     display: grid;
     grid-template-areas:
-    'header header header'
-    'image image image'
-    'aside main main'
-    'aside footer footer';
+        'header header header'
+        'image image image'
+        'aside main main'
+        'aside footer footer';
     grid-template-columns: 2fr 3fr 3fr;
     grid-template-rows: 0.5fr 1.5fr 6fr 1fr;
     gap: 10px;
@@ -55,19 +55,19 @@ h3 {
     padding-bottom: 10px;
 }
 
-header { 
+header {
     grid-area: header;
     background-color: var(--text-color);
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 #name {
-    background-image: 
-    linear-gradient(rgba(78, 160, 228, 0.5) 50%, rgba(78, 160, 228, 1) 100%);
+    background-image:
+        linear-gradient(rgba(78, 160, 228, 0.5) 50%, rgba(78, 160, 228, 1) 100%);
     margin-top: 10px;
     width: 275px;
     height: 2.2rem;
@@ -93,7 +93,8 @@ ul {
     list-style: none;
 }
 
-li, a {
+li,
+a {
     color: var(--highlight-color);
     text-decoration: none;
     font-weight: 500;
@@ -113,8 +114,8 @@ main {
     grid-area: main;
     display: grid;
     grid-template-areas:
-    'about'
-    'section';
+        'about'
+        'section';
     grid-template-rows: 1fr 3fr;
     gap: 10px;
 }
@@ -156,14 +157,14 @@ aside {
     grid-area: aside;
     display: grid;
     grid-template-areas:
-    'about'
-    'work'
-    'contact';
-    grid-template-rows: 1.67fr 5fr 1.13fr; 
+        'about'
+        'work'
+        'contact';
+    grid-template-rows: 1.67fr 5fr 1.13fr;
     gap: 10px;
 }
 
-aside > * {
+aside>* {
     border-right: solid 5px var(--text-color);
 }
 
@@ -179,8 +180,8 @@ aside > * {
     grid-area: section;
     display: grid;
     grid-template-areas:
-    'project'
-    'coming-soon';
+        'project'
+        'coming-soon';
     grid-template-rows: 1.5fr 1fr;
     gap: 10px;
 }
@@ -188,7 +189,7 @@ aside > * {
 .project {
     grid-area: project;
     border: solid 3px var(--highlight-color);
-    background-image: url(../images/01-app-desktop.png);
+    background-image: url(../images/Screen-shot-1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -200,9 +201,10 @@ aside > * {
     justify-content: flex-start;
     padding: 0;
 }
+
 .project .label {
     height: 2.7rem;
-    width: 100px;
+    width: 150px;
     background-color: var(--highlight-color);
     display: flex;
     justify-self: flex-start;
@@ -214,7 +216,9 @@ aside > * {
     color: var(--text-color);
 }
 
-a, .project, .coming-soon {
+a,
+.project,
+.coming-soon {
     cursor: pointer;
 }
 
@@ -227,7 +231,7 @@ a, .project, .coming-soon {
 
 #one .label {
     height: 1.5rem;
-    width: 130px;
+    width: 160px;
     background-color: var(--highlight-color);
     border-radius: 0 7px 7px 0;
 
@@ -237,8 +241,8 @@ a, .project, .coming-soon {
     grid-area: coming-soon;
     display: grid;
     grid-template-areas:
-    'one two'
-    'three four';
+        'one two'
+        'three four';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
@@ -247,11 +251,11 @@ a, .project, .coming-soon {
 #one {
     grid-area: one;
     border: solid 3px var(--highlight-color);
-    background-image: url(../images/pexels-pixabay-276452.jpg);
+    background-image: url(../images/01-app-desktop.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 #two,
@@ -291,7 +295,8 @@ footer ul li a {
     padding: 0 25px;
 }
 
-footer, .contact {
+footer,
+.contact {
     margin-bottom: 10px;
 }
 
@@ -300,10 +305,10 @@ footer, .contact {
 @media screen and (max-width: 992px) {
     body {
         grid-template-areas:
-        'header header'
-        'image image'
-        'main main'
-        'footer footer';
+            'header header'
+            'image image'
+            'main main'
+            'footer footer';
         grid-template-columns: 1fr 1fr;
     }
 
@@ -341,10 +346,10 @@ footer, .contact {
 
     .coming-soon {
         grid-template-areas:
-        'one one'
-        'two two'
-        'three three'
-        'four four';
+            'one one'
+            'two two'
+            'three three'
+            'four four';
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
